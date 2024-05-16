@@ -1,0 +1,51 @@
+    corn_area = data['agriculture']['corn_area']
+    wheat_area = data['agriculture']['wheat_area']
+    soybeans_area = data['agriculture']['soybeans_area']
+    sg_area = data['agriculture']['sg_area']
+
+    # Energy variables
+    energy_value = data['energy']['energy_value']
+    loan_term = data['energy']['loan_term']
+    interest = data['energy']['interest']
+    num_wind_turbines = data['energy']['num_wind_turbines']
+    nyear_w = data['energy']['nyear_w']
+    capacity_w = data['energy']['capacity_w']
+    cost_w = data['energy']['cost_w']
+    degrade_w = data['energy']['degrade_w']
+    wind_factor = data['energy']['wind_factor']
+    num_panel_sets = data['energy']['num_panel_sets']
+    nyear_s = data['energy']['nyear_s']
+    cost_s = data['energy']['cost_s']
+    capacity_s = data['energy'][
+        'capacity_s']
+    degrade_s = data['energy']['degrade_s']
+    sun_hrs = data['energy']['sun_hrs']
+    ptc_w = data['energy']['ptc_w']
+    itc_s = data['energy']['itc_s']
+    ptc_s = data['energy']['ptc_s']
+
+    # Irrigation variables
+    aquifier_level = data['irrigation']['aquifier_level']
+    min_aquifier_level = data['irrigation']['min_aquifier_level']
+
+    # Number of years variable
+    num_of_years = data['numberofyears']['num_of_years']
+
+    # Climate data variable
+    future_processes = data['ClimateData']['future_processes']
+
+    # Start year variable
+    input_start_of_years = data['StartYear']['input_start_of_years']
+
+
+
+C1A1E1W1, C1A1E1W2, C1A1E2W1, C1A1E2W2
+C1A2E1W1, C1A2E1W2, C1A2E2W1, C1A2E2W2
+C2A1E1W1, C2A1E1W2, C2A1E2W1, C2A1E2W2
+C2A2E1W1, C2A2E1W2, C2A2E2W1, C2A2E2W2
+C3A1E1W1, C3A1E1W2, C3A1E2W1, C3A1E2W2
+C3A2E1W1, C3A2E1W2, C3A2E2W1, C3A2E2W2
+C4A1E1W1, C4A1E1W2, C4A1E2W1, C4A1E2W2
+C4A2E1W1, C4A2E1W2, C4A2E2W1, C4A2E2W2
+C5A1E1W1, C5A1E1W2, C5A1E2W1, C5A1E2W2
+C5A2E1W1, C5A2E1W2, C5A2E2W1, C5A2E2W2

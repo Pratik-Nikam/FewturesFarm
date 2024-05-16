@@ -6,7 +6,6 @@ from config import ROOT_DIR
 dirname = os.path.dirname(os.path.abspath(__file__))
 
 
-
 def crop_production_calculation():
     file_path = os.path.join(ROOT_DIR, "data/tests/crop-production.csv")    
     df = pd.read_csv(file_path, delimiter="\t", header=None)
