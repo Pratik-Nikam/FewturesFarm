@@ -5,8 +5,8 @@ from config import ROOT_DIR
 
 dirname = os.path.dirname(os.path.abspath(__file__))
 
-def crop_income_calculation():
-    file_path = os.path.join(ROOT_DIR, "data/tests/total-net-income.csv")
+def crop_income_calculation(key=None):
+    file_path = os.path.join(ROOT_DIR,f"data/outputs/{key}/total-net-income.csv")
 
     crop_income_data = pd.read_csv(file_path, delimiter="\t", header=None)
 
@@ -49,8 +49,8 @@ def crop_income_calculation():
     return json.dumps(temp)
 
 
-def insurance_income_calculation():
-    file_path = os.path.join(ROOT_DIR, "data/tests/income-from-crop-insurance.csv")
+def insurance_income_calculation(key=None):
+    file_path = os.path.join(ROOT_DIR, f"data/outputs/{key}/income-from-crop-insurance.csv")
 
     insurance_production_data = pd.read_csv(file_path, delimiter="\t", header=None)
 

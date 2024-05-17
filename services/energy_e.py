@@ -7,8 +7,8 @@ dirname = os.path.dirname(os.path.abspath(__file__))
 
 
 dirname = os.path.dirname(__file__)
-def farm_energy_production_calculation():
-    file_path =file_path = os.path.join(ROOT_DIR, "data/tests/farm-energy-production.csv")
+def farm_energy_production_calculation(key=None):
+    file_path =file_path = os.path.join(ROOT_DIR, f"data/outputs/{key}/farm-energy-production.csv")
     farm_energy_production_data = pd.read_csv(file_path, delimiter="\t", header=None)
 
     # Preprocess the DataFrame
@@ -42,16 +42,12 @@ def farm_energy_production_calculation():
         'zeroMWh': df['0 MWh'].values.tolist(),
         'farmenergyproductiontitle':farmenergyproductiontitle
     }}
-
-    
-    print(temp)
-
     return json.dumps(temp)
 
 
-def energy_net_income_calculation():
+def energy_net_income_calculation(key=None):
 
-    file_path =file_path = os.path.join(ROOT_DIR, "data/tests/energy-net-income.csv")
+    file_path =file_path = os.path.join(ROOT_DIR, f"data/outputs/{key}/energy-net-income.csv")
  
     energy_net_income_data = pd.read_csv(file_path, delimiter="\t", header=None)
 

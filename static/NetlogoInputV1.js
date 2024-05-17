@@ -48,7 +48,7 @@ function combineAllFormData() {
     const agricultureData = combineFormData('AgricultureForm');
     const energyData = combineFormData('EnergyForm');
     const irrigationData = combineFormData('IrrigationForm');
-    const ClimateData = combineFormData('climateForm');
+    const climateData = combineFormData('climateForm');
 
     const numberOfYearsData = {
         num_of_years: slider.value
@@ -65,7 +65,7 @@ function combineAllFormData() {
         energy: energyData,
         irrigation: irrigationData,
         numberofyears: numberOfYearsData,
-        ClimateData:ClimateData,
+        climate:climateData,
         StartYear:startOfYearsData
     };
 

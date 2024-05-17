@@ -1,4 +1,5 @@
 import os
+import json
 import pandas as pd
 from config import ROOT_DIR
 
@@ -6,8 +7,11 @@ from config import ROOT_DIR
 dirname = os.path.dirname(os.path.abspath(__file__))
 
 
-def crop_production_calculation():
-    file_path = os.path.join(ROOT_DIR, "data/tests/crop-production.csv")    
+def crop_production_calculation(key=None):
+    print(key)
+    file_path = os.path.join(ROOT_DIR, f"data/outputs/{key}/crop-production.csv")    
+
+    print(file_path)
     df = pd.read_csv(file_path, delimiter="\t", header=None)
     df = df.drop(df.index[0:15])
     df = df[0].str.split(',', expand=True)
@@ -33,10 +37,11 @@ def crop_production_calculation():
         'SG': df['SG'].values.tolist(),
         "crop_production_title": crop_production_title
     }}
-    return temp
+    return json.dumps(temp)
 
-def net_income_calculation():
-    file_path = os.path.join(ROOT_DIR, "data/tests/ag-net-income.csv")
+def net_income_calculation(key=None):
+    file_path = os.path.join(ROOT_DIR, f"data/outputs/{key}/ag-net-income.csv")
+    print(file_path)
     df = pd.read_csv(file_path, delimiter="\t", header=None)
     df = df.drop(df.index[0:16])
     df = df[0].str.split(',', expand=True)
@@ -67,4 +72,5 @@ def net_income_calculation():
             "netCalculationTitle": net_calculation_title
         }
     }
-    return temp
+    
+    return json.dumps(temp)
