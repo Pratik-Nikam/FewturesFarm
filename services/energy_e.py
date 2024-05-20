@@ -33,7 +33,7 @@ def farm_energy_production_calculation(key=None):
 
     df=df[['year','Wind','Solar','0 MWh']]
 
-    farmenergyproductiontitle = f'Farm Energy Production- Start Year: 2008'
+    farmenergyproductiontitle = f'Farm Energy Net Production- Start Year: 2008 (Comination: {key})'
 
     temp = {"energy": {
         'Year': df['year'].values.tolist(),
@@ -78,7 +78,7 @@ def energy_net_income_calculation(key=None):
 
     df=df[['year','Wind','Solar','US$0']]
 
-    energyproductiontitle = f'Farm Energy Production - Start Year: 2008'
+    energyproductiontitle = f'Farm Energy Net Income - Start Year: 2008 (Comination: {key})'
 
 
     temp = {

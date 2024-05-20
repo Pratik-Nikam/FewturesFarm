@@ -53,7 +53,7 @@ function drawCharts() {
             },
             yAxis: {
                 title:{
-                    text:'<b>Irrigation</b>',
+                    text:'<b>Irrigation (Inches)</b>',
                 },
             },
             series: [
@@ -85,7 +85,7 @@ function drawCharts() {
             },
             yAxis: {
                 title: {
-                    text: '<b>GroundWater Level</b>',
+                    text: '<b>GroundWater Level (Feet)</b>',
                 },
             },
             series: [

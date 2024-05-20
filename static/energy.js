@@ -50,7 +50,7 @@ function drawCharts() {
                 },
                 yAxis: {
                     title: {
-                        text: '<b>Production</b>',
+                        text: '<b>Production (MWh)</b>',
                     },
                 },
                 series: [
@@ -88,7 +88,7 @@ function drawCharts() {
                 series: [
                     { name: 'Wind', data: windIncome, color: 'red' },
                     { name: 'Solar', data: solarIncome, color: 'green' },
-                    { name: 'US$', data: us$0Income, color: 'yellow' },
+                    // { name: 'US$', data: us$0Income, color: 'yellow' },
                 ],
                 // Add exporting options
                 exporting: {

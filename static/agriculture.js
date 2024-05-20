@@ -56,13 +56,13 @@ function drawCharts() {
                 },
                 yAxis: {
                     title: {
-                        text: '<b>Production (Bushels)</b>',
+                        text: '<b>Production (Bushels/Acre)</b>',
                     },
                 },
                 series: [
                     { name: 'Corn', data: cornData, color: 'red' },
                     { name: 'Wheat', data: wheatData, color: 'green' },
-                    { name: 'Soybean', data: soybeanData, color: 'blue' },
+                    { name: 'Soybeans', data: soybeanData, color: 'blue' },
                     { name: 'SG', data: sgData, color: 'orange' }
                 ],
                 exporting: {
@@ -94,9 +94,9 @@ function drawCharts() {
                 series: [
                     { name: 'Corn', data: cornIncome, color: 'red' },
                     { name: 'Wheat', data: wheatIncome, color: 'green' },
-                    { name: 'Soybean', data: soybeanIncome, color: 'blue' },
+                    { name: 'Soybeans', data: soybeanIncome, color: 'blue' },
                     { name: 'SG', data: sgIncome, color: 'orange' },
-                    { name: 'US$', data: USIncome, color: 'yellow' }
+                    // { name: 'US$', data: USIncome, color: 'yellow' }
                 ],
                 exporting: {
                     filename: `AgricultureNetIncome_${getCurrentDateTime()}`,

@@ -92,7 +92,7 @@ calculateButton.addEventListener("click", function (event) {
     .then(response => response.json())
     .then(data => {
         console.log('Response from API:', data);
-        alert("Data Calculated Successfully !!")
+        alert("Simulation run completed successfully! Please scroll down and click on the relevant sections (Agriculture, Energy, Water, Farm Net Income) to view the graphs.")
         hideLoader()
     })
     .catch(error => {

@@ -268,6 +268,7 @@ def calculate():
     climate_data = data.get('climateData', {})
 
     print(data)
+    
     # print("=====================================")
     # print(combination_data.get("agriculture"))
     # print(combination_data.get("climate"))
@@ -280,7 +281,7 @@ def calculate():
     # print(agriculture_key, energy_key, irrigation_key, climate_key)
     # print(climate_key)
     folder_combination_key = f"{climate_key}{agriculture_key}{energy_key}{irrigation_key}"
-    # print(key)
+    print("*****    ", folder_combination_key, "      *****")
 
     session["key"] = folder_combination_key
 

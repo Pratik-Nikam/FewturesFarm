@@ -490,7 +490,7 @@
                                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
                                                 data-target="#collapse7" aria-expanded="false"
                                                 aria-controls="collapseThree">
-                                                Choose the number of years.
+                                                Run Simulation
                                             </button>
                                         </h5>
                                     </div>
@@ -515,15 +515,20 @@
                                                 <br>
                                                 <span id="slider-value">99</span>
                                                 <br>
-
-
                                                 <br>
-
-                                                <input type="submit" value="Calculate" id="calculate-button">
+                                               <input type="submit" value="Calculate" id="calculate-button">
                                                 </form>
                                             </div>
                                         </div>
                                     </div>
+                                    <script>
+                                        function showSuccessMessage(event) {
+                                            event.preventDefault(); // Prevent the form from submitting
+                                            alert("Simulation run completed successfully! Please scroll down and click on the relevant sections (Agriculture, Energy, Water, Farm Net Income) to view the graphs.");
+                                            // Optionally, you can submit the form after showing the alert
+                                            // event.target.submit();
+                                        }
+                                    </script>
                                 </div>
 
 

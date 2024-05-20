@@ -154,3 +154,4 @@ cython_debug/
 
 testing/
 .ds_store
+logic.txt

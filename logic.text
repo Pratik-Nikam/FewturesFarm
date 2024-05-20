@@ -1,43 +1,90 @@
-    corn_area = data['agriculture']['corn_area']
-    wheat_area = data['agriculture']['wheat_area']
-    soybeans_area = data['agriculture']['soybeans_area']
-    sg_area = data['agriculture']['sg_area']
-
-    # Energy variables
-    energy_value = data['energy']['energy_value']
-    loan_term = data['energy']['loan_term']
-    interest = data['energy']['interest']
-    num_wind_turbines = data['energy']['num_wind_turbines']
-    nyear_w = data['energy']['nyear_w']
-    capacity_w = data['energy']['capacity_w']
-    cost_w = data['energy']['cost_w']
-    degrade_w = data['energy']['degrade_w']
-    wind_factor = data['energy']['wind_factor']
-    num_panel_sets = data['energy']['num_panel_sets']
-    nyear_s = data['energy']['nyear_s']
-    cost_s = data['energy']['cost_s']
-    capacity_s = data['energy'][
-        'capacity_s']
-    degrade_s = data['energy']['degrade_s']
-    sun_hrs = data['energy']['sun_hrs']
-    ptc_w = data['energy']['ptc_w']
-    itc_s = data['energy']['itc_s']
-    ptc_s = data['energy']['ptc_s']
-
-    # Irrigation variables
-    aquifier_level = data['irrigation']['aquifier_level']
-    min_aquifier_level = data['irrigation']['min_aquifier_level']
-
-    # Number of years variable
-    num_of_years = data['numberofyears']['num_of_years']
-
-    # Climate data variable
-    future_processes = data['ClimateData']['future_processes']
-
-    # Start year variable
-    input_start_of_years = data['StartYear']['input_start_of_years']
-
-
+{
+  "agriculture": {
+    "A1": {
+      "corn_area": 200,
+      "wheat_area": 125,
+      "soybeans_area": 0,
+      "sg_area": 125
+    },
+    "A2": {
+      "corn_area": 125,
+      "wheat_area": 200,
+      "soybeans_area": 200,
+      "sg_area": 200
+    }
+  },
+  "energy": {
+    "E1": {
+      "energy_value": 38,
+      "loan_term": 1,
+      "interest": 2,
+      "num_wind_turbines": 1,
+      "nyear_w": 20,
+      "capacity_w": 1,
+      "cost_w": 1470,
+      "degrade_w": 1,
+      "wind_factor": 42,
+      "num_panel_sets": 3,
+      "nyear_s": 25,
+      "cost_s": 1750,
+      "capacity_s": 250,
+      "degrade_s": 0.5,
+      "sun_hrs": 5.6,
+      "ptc_w": 0,
+      "itc_s": 0,
+      "ptc_s": 0
+    },
+    "E2": {
+      "energy_value": 50,
+      "loan_term": 1,
+      "interest": 10,
+      "num_wind_turbines": 2,
+      "nyear_w": 30,
+      "capacity_w": 2,
+      "cost_w": 2500,
+      "degrade_w": 2,
+      "wind_factor": 60,
+      "num_panel_sets": 8,
+      "nyear_s": 30,
+      "cost_s": 4000,
+      "capacity_s": 300,
+      "degrade_s": 1,
+      "sun_hrs": 8,
+      "ptc_w": 0.03,
+      "itc_s": 30,
+      "ptc_s": 0.03
+    }
+  },
+  "water": {
+    "W1": {
+      "aquifier_level": 200,
+      "min_aquifier_level": 30
+    },
+    "W2": {
+      "aquifier_level": 300,
+      "min_aquifier_level": 30
+    }
+  },
+  "climate": {
+    "C1": {
+      "future_processes": "Repeat Historical"
+    },
+    "C2": {
+      "future_processes": "Wetter Future"
+    },
+    "C3": {
+      "future_processes": "Dryer Future"
+    },
+    "C4": {
+      "future_processes": "GCM",
+      "climate_model": "RCP4.5"
+    },
+    "C5": {
+      "future_processes": "GCM",
+      "climate_model": "RCP8.5"
+    }
+  }
+}
 
 C1A1E1W1, C1A1E1W2, C1A1E2W1, C1A1E2W2
 C1A2E1W1, C1A2E1W2, C1A2E2W1, C1A2E2W2
@@ -49,3 +96,291 @@ C4A1E1W1, C4A1E1W2, C4A1E2W1, C4A1E2W2
 C4A2E1W1, C4A2E1W2, C4A2E2W1, C4A2E2W2
 C5A1E1W1, C5A1E1W2, C5A1E2W1, C5A1E2W2
 C5A2E1W1, C5A2E1W2, C5A2E2W1, C5A2E2W2
+
+
+{
+  "C1A1E1W1": {
+    "climate": {
+      "future_processes": "Repeat Historical"
+    },
+    "agriculture": {
+      "corn_area": 200,
+      "wheat_area": 125,
+      "soybeans_area": 0,
+      "sg_area": 125
+    },
+    "energy": {
+      "energy_value": 38,
+      "loan_term": 1,
+      "interest": 2,
+      "num_wind_turbines": 1,
+      "nyear_w": 20,
+      "capacity_w": 1,
+      "cost_w": 1470,
+      "degrade_w": 1,
+      "wind_factor": 42,
+      "num_panel_sets": 3,
+      "nyear_s": 25,
+      "cost_s": 1750,
+      "capacity_s": 250,
+      "degrade_s": 0.5,
+      "sun_hrs": 5.6,
+      "ptc_w": 0,
+      "itc_s": 0,
+      "ptc_s": 0
+    },
+    "water": {
+      "aquifier_level": 200,
+      "min_aquifier_level": 30
+    }
+  },
+  "C1A1E1W2": {
+    "climate": {
+      "future_processes": "Repeat Historical"
+    },
+    "agriculture": {
+      "corn_area": 200,
+      "wheat_area": 125,
+      "soybeans_area": 0,
+      "sg_area": 125
+    },
+    "energy": {
+      "energy_value": 38,
+      "loan_term": 1,
+      "interest": 2,
+      "num_wind_turbines": 1,
+      "nyear_w": 20,
+      "capacity_w": 1,
+      "cost_w": 1470,
+      "degrade_w": 1,
+      "wind_factor": 42,
+      "num_panel_sets": 3,
+      "nyear_s": 25,
+      "cost_s": 1750,
+      "capacity_s": 250,
+      "degrade_s": 0.5,
+      "sun_hrs": 5.6,
+      "ptc_w": 0,
+      "itc_s": 0,
+      "ptc_s": 0
+    },
+    "water": {
+      "aquifier_level": 300,
+      "min_aquifier_level": 30
+    }
+  },
+  "C1A1E2W1": {
+    "climate": {
+      "future_processes": "Repeat Historical"
+    },
+    "agriculture": {
+      "corn_area": 200,
+      "wheat_area": 125,
+      "soybeans_area": 0,
+      "sg_area": 125
+    },
+    "energy": {
+      "energy_value": 50,
+      "loan_term": 1,
+      "interest": 10,
+      "num_wind_turbines": 2,
+      "nyear_w": 30,
+      "capacity_w": 2,
+      "cost_w": 2500,
+      "degrade_w": 2,
+      "wind_factor": 60,
+      "num_panel_sets": 8,
+      "nyear_s": 30,
+      "cost_s": 4000,
+      "capacity_s": 300,
+      "degrade_s": 1,
+      "sun_hrs": 8,
+      "ptc_w": 0.03,
+      "itc_s": 30,
+      "ptc_s": 0.03
+    },
+    "water": {
+      "aquifier_level": 200,
+      "min_aquifier_level": 30
+    }
+  },
+  "C1A1E2W2": {
+    "climate": {
+      "future_processes": "Repeat Historical"
+    },
+    "agriculture": {
+      "corn_area": 200,
+      "wheat_area": 125,
+      "soybeans_area": 0,
+      "sg_area": 125
+    },
+    "energy": {
+      "energy_value": 50,
+      "loan_term": 1,
+      "interest": 10,
+      "num_wind_turbines": 2,
+      "nyear_w": 30,
+      "capacity_w": 2,
+      "cost_w": 2500,
+      "degrade_w": 2,
+      "wind_factor": 60,
+      "num_panel_sets": 8,
+      "nyear_s": 30,
+      "cost_s": 4000,
+      "capacity_s": 300,
+      "degrade_s": 1,
+      "sun_hrs": 8,
+      "ptc_w": 0.03,
+      "itc_s": 30,
+      "ptc_s": 0.03
+    },
+    "water": {
+      "aquifier_level": 300,
+      "min_aquifier_level": 30
+    }
+  },
+  "C1A2E1W1": {
+    "climate": {
+      "future_processes": "Repeat Historical"
+    },
+    "agriculture": {
+      "corn_area": 125,
+      "wheat_area": 200,
+      "soybeans_area": 200,
+      "sg_area": 200
+    },
+    "energy": {
+      "energy_value": 38,
+      "loan_term": 1,
+      "interest": 2,
+      "num_wind_turbines": 1,
+      "nyear_w": 20,
+      "capacity_w": 1,
+      "cost_w": 1470,
+      "degrade_w": 1,
+      "wind_factor": 42,
+      "num_panel_sets": 3,
+      "nyear_s": 25,
+      "cost_s": 1750,
+      "capacity_s": 250,
+      "degrade_s": 0.5,
+      "sun_hrs": 5.6,
+      "ptc_w": 0,
+      "itc_s": 0,
+      "ptc_s": 0
+    },
+    "water": {
+      "aquifier_level": 200,
+      "min_aquifier_level": 30
+    }
+  },
+  "C1A2E1W2": {
+    "climate": {
+      "future_processes": "Repeat Historical"
+    },
+    "agriculture": {
+      "corn_area": 125,
+      "wheat_area": 200,
+      "soybeans_area": 200,
+      "sg_area": 200
+    },
+    "energy": {
+      "energy_value": 38,
+      "loan_term": 1,
+      "interest": 2,
+      "num_wind_turbines": 1,
+      "nyear_w": 20,
+      "capacity_w": 1,
+      "cost_w": 1470,
+      "degrade_w": 1,
+      "wind_factor": 42,
+      "num_panel_sets": 3,
+      "nyear_s": 25,
+      "cost_s": 1750,
+      "capacity_s": 250,
+      "degrade_s": 0.5,
+      "sun_hrs": 5.6,
+      "ptc_w": 0,
+      "itc_s": 0,
+      "ptc_s": 0
+    },
+    "water": {
+      "aquifier_level": 300,
+      "min_aquifier_level": 30
+    }
+  },
+  "C1A2E2W1": {
+    "climate": {
+      "future_processes": "Repeat Historical"
+    },
+    "agriculture": {
+      "corn_area": 125,
+      "wheat_area": 200,
+      "soybeans_area": 200,
+      "sg_area": 200
+    },
+    "energy": {
+      "energy_value": 50,
+      "loan_term": 1,
+      "interest": 10,
+      "num_wind_turbines": 2,
+      "nyear_w": 30,
+      "capacity_w": 2,
+      "cost_w": 2500,
+      "degrade_w": 2,
+      "wind_factor": 60,
+      "num_panel_sets": 8,
+      "nyear_s": 30,
+      "cost_s": 4000,
+      "capacity_s": 300,
+      "degrade_s": 1,
+      "sun_hrs": 8,
+      "ptc_w": 0.03,
+      "itc_s": 30,
+      "ptc_s": 0.03
+    },
+    "water": {
+      "aquifier_level": 200,
+      "min_aquifier_level": 30
+    }
+  },
+  "C1A2E2W2": {
+    "climate": {
+      "future_processes": "Repeat Historical"
+    },
+    "agriculture": {
+      "corn_area": 125,
+      "wheat_area": 200,
+      "soybeans_area": 200,
+      "sg_area": 200
+    },
+    "energy": {
+      "energy_value": 50,
+      "loan_term": 1,
+      "interest": 10,
+      "num_wind_turbines": 2,
+      "nyear_w": 30,
+      "capacity_w": 2,
+      "cost_w": 2500,
+      "degrade_w": 2,
+      "wind_factor": 60,
+      "num_panel_sets": 8,
+      "nyear_s": 30,
+      "cost_s": 4000,
+      "capacity_s": 300,
+      "degrade_s": 1,
+      "sun_hrs": 8,
+      "ptc_w": 0.03,
+      "itc_s": 30,
+      "ptc_s": 0.03
+    },
+    "water": {
+      "aquifier_level": 300,
+      "min_aquifier_level": 30
+    }
+  }
+  // Add more combinations here...
+}
+
+
+This website is under construction and allows preset configuration runs. Complete functionality of Netlogo is not available yet.

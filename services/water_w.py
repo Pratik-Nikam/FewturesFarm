@@ -55,7 +55,7 @@ def crop_groundwater_irrigation(key=None):
 
     df = df[["year", "Corn", "Wheat", "Soybean", "SG"]]
 
-    CropIrrigationTitle = f"Crop Irrigation - Start Year: 2008"
+    CropIrrigationTitle = f"Crop Groundwater Irrigation - Start Year: 2008 (Comination: {key})"
 
     temp = {
         "irrigation": {
@@ -113,7 +113,7 @@ def groundwater_level(key=None):
 
     df = df[["year", "GW level", "Min. Aq.", "Min. +30"]]
 
-    GroundWaterLeveltitle = f"Ground Water Level- Start Year: 2008"
+    GroundWaterLeveltitle = f"Crop Ground Water Level- Start Year: 2008 (Comination: {key})"
 
     temp = {
         "gw_level": {

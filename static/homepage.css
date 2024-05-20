@@ -112,6 +112,15 @@ body {
     border-radius: 20px;
   }
   
+
+  .info-card-note {
+    width: 1300px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background: #d8f9db;
+    border-radius: 20px;
+  }
+
   .info-text-ctn {
     width: 1000px;
     /* background: #eee; */
@@ -204,6 +213,7 @@ body {
     margin-top: 60px;
     mix-blend-mode: darken;
   }
+  
   /* footer {
       background-color: #222;
       color: #fff;
@@ -228,4 +238,6 @@ body {
       color: #3c97bf;
       text-decoration: none;
   } */
+
+  
   

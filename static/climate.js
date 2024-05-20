@@ -65,7 +65,7 @@ function drawCharts() {
                     { name: 'Crop', data: cropData, color: 'red'},
                     { name: 'Energy', data: energyData, color: 'green'},
                     { name: 'All', data: allData, color: 'blue'},
-                    { name: 'US$', data: usData, color: 'orange'}
+                    // { name: 'US$', data: usData, color: 'orange'}
                 ],
                 // Add exporting options
                 exporting: {
@@ -100,7 +100,7 @@ function drawCharts() {
                 series: [
                     { name: 'Corn', data: CornData, color: 'red'},
                     { name: 'Wheat', data: WheatData, color: 'green'},
-                    { name: 'Soyabean', data: SoyaData, color: 'blue'},
+                    { name: 'Soybeans', data: SoyaData, color: 'blue'},
                     { name: 'SG', data: getsgData, color: 'yellow'}
                 ],
                 // Add exporting options

@@ -33,7 +33,7 @@ def crop_income_calculation(key=None):
 
     df = df[['year', 'Crop', 'Energy', 'All', 'US$0']]
 
-    total_farm_net_income = f'Total Farm Net Income - Start Year: 2008'
+    total_farm_net_income = f'Total Farm Net Income - Start Year: 2008 (Comination: {key})'
 
     temp = {
         "Crop_Income": {
@@ -81,7 +81,7 @@ def insurance_income_calculation(key=None):
 
     df = df[['year', 'Corn', 'Wheat', 'Soybean', 'SG']]
 
-    total_income_from_crop_insurance = f'Total Income From Crop Insurance - Start Year: 2008'
+    total_income_from_crop_insurance = f'Total Income From Crop Insurance - Start Year: 2008 (Comination: {key})'
 
     temp = {
         "Insurance_Income": {

@@ -28,7 +28,7 @@ def crop_production_calculation(key=None):
     df['SG'] = df['SG'].str.replace('"', '').astype(int)
     df = df[['year','Corn','Wheat','Soybean','SG']]
 
-    crop_production_title = f'Crop Production (Bushels) - Start Year: 2008'
+    crop_production_title = f'Crop Production (Bushels) - Start Year: 2008 (Comination: {key})'
     temp = {"production": {
         'Year': df['year'].values.tolist(),
         'Corn': df['Corn'].values.tolist(),
@@ -60,7 +60,7 @@ def net_income_calculation(key=None):
     df['US$0'] = df['US$0'].str.replace('"', '').astype(float)
     df = df[['year','Corn','Wheat','Soybean','SG','US$0']]
 
-    net_calculation_title  = f'Agriculture Net Income - Start Year: 2008'
+    net_calculation_title  = f'Agriculture Net Income - Start Year: 2008 (Comination: {key})'
     temp = {
         "Income": {
             'Year': df['year'].values.tolist(),
